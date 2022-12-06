@@ -1,0 +1,134 @@
+body {
+    background-color: #000000d1;
+    margin: 0;
+    text-align: center;
+    overflow: hidden;
+}
+img a:hover {
+    
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   
+}
+
+#telaDeLogin {
+    display: none;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 90%;
+    color: white;
+}
+
+#telaDeCadastro {
+    display: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    width: 90%;
+    color: white;
+}
+
+footer {
+    /* background-image: url(https://static.vecteezy.com/ti/fotos-gratis/p1/3188012-dark-wood-table-texture-wallpaper-and-background-gr%C3%A1tis-foto.jpg); */
+    height: 10%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+#popup {
+    /* background-image: url(https://i.gifer.com/origin/13/13d6f03fa7d96e8e46d81f005ef51c63_w200.webp);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 150px 150px;
+    background-position-x: 90%;
+    background-position-y: 75%; */
+
+    display: none;
+    width: 90%;
+    height: 20em;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 10px 10px 10px rgb(88, 88, 88);
+    overflow: auto;
+    
+}
+
+#barraTarefas {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    border: solid 1px;
+    background-color: rgb(57, 57, 57);
+    padding: 3px; 
+    height: 25px;
+    align-items: center;
+   
+}
+
+#sair {
+    border-radius: 3px;
+    height: 25px;
+}
+
+#sair:hover {
+ background-color: red;
+}
+
+:root {
+    --cor-fundo: rgb(45, 45, 43);
+    --cor-hover: rgba(0, 0, 0, 0.229);
+    --cor-Primaria: rgb(57, 57, 57);
+}
+
+a {
+   color: rgb(74, 124, 168);
+   height: 10px;
+}
+
+.menu ul {
+    list-style-type: none;
+    
+}
+
+.menu li {
+    display: inline-block;
+    
+}
+
+.menu ul li a {
+    display: block;
+    background-color: var(--cor-Primaria);
+    text-decoration: none;
+    padding: 10px;
+}
+
+.menu ul li a:hover {
+    background-color: var(--cor-hover);
+    border-radius: 20px 0px 20px 0px;
+    transform: scale(0.89);
+    border: solid 1px;
+}
+
+#estudos {
+    display: none;
+}
+
+video {
+    display: none;
+}
+
+canvas {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    
+}

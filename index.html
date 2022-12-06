@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Café com Javascript</title>
+</head>
+<body>
+    <img src="img/XDZT.gif" alt="" id="img" onclick="abrirTelaDeLogin()">
+    <section>
+        
+        <video id="video"></video>
+        
+        <div id="popup">
+            <div id="barraTarefas">
+                <button id="sair" onclick="sair()">X</button>
+                <nav class="menu">
+                    <ul>
+                        <li><a href="#" id="dadosCadastrais" onclick="listarDadosCadastrados()">Dados de Cadastro</a></li>
+
+                        <li><a href="#" id="dadosCadastrais" onclick="projetos()">Projetos</a></li>
+                       
+                        <li><a href="#" id="dadosEstudo" onclick="dadosEstudos()">Estudos</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+
+            <canvas id="canvas"></canvas>
+
+        </div>
+
+        <div class="dadosDeCadatro"></div>
+
+        <div class="projetos"></div>
+
+        <div class="estudos"></div>
+
+        <div id="telaDeLogin">
+            <label>Nome:</label>
+            <input type="text"  name="nome" id="nome" placeholder="Nome">
+            <label>Email:</label>
+            <input type="email" name="email" id="email" placeholder="Email">
+            <label aria-required>Senha:</label>
+            <input type="password" name="senha" id="senha" placeholder="Senha">
+            <input type="submit" value="Entrar" onclick="logar()">
+            <h6>Ainda não é cadastrado? <a href="#" onclick="abrirTelaDeCadastro()">Clique aqui!</a></h3>
+        </div>
+        <div id="telaDeCadastro">
+            <label>Nome:</label>
+            <input type="text" name="nome" id="cadastroNome">
+            <label>Email:</label>
+            <input type="email" name="email" id="cadastroEmail">
+            <label>Senha:</label>
+            <input type="password" name="senha" id="cadastroSenha"><hr>
+            <label>Telefone:</label>
+            <input type="tel" name="telefone" id="cadastroTelefone">
+            <label>Data:</label>
+            <input type="date" name="data" id="cadastroData">
+            
+            <label>Estado</label>
+            <select name="estado" id="cadastroEstado">
+                <option value="SP">SP</option>
+                <option value="RJ">RJ</option>
+                <option value="BA">DF</option>
+                <option value="">BA</option>
+                <option value="PB">MG</option>
+
+            <input type="radio" name="sexo" id="cadastroMasculino">
+            <label>Masculino</label>
+            <input type="radio" name="sexo" id="cadastroFeminino">
+            <label>Feminino</label>
+            
+            </select>
+
+            <input type="submit" value="Cadastrar" onclick="dadosDeCadastro()">
+        </div>
+        <div id="listaDeCadastro">
+
+        </div>
+    </section>
+    <footer>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
